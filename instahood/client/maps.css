@@ -1,0 +1,11 @@
+#map_canvas { 
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index:-1;
+  margin-top:33px;
+}

@@ -1,0 +1,39 @@
+<head>
+	<title>San Francisco, as seen by instagramers</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+	<meta name="viewport", content="width=device-width, initial-scale=0.5, user-scalable=no">
+</head>
+
+<body>
+{{> main}}
+{{> instagram}}
+</body>
+
+<template name="main">
+	<nav>
+		<span>Real-time SF</span>
+		<select name="place-selector" id="place-selector">
+			<option value="other" id="default-selection" selected>change zone</option>
+			{{#placesIterator}}{{/placesIterator}}
+		</select>
+		{{#constant}}
+		<div id="social">
+			<a href="https://twitter.com/share" class="twitter-share-button" 
+			data-lang="en" data-text="See Barcelona in realtime through instagram!" 
+			data-via="lechienvic" target="_blank">Tweet</a>
+		</div>
+		{{/constant}}
+	</nav>
+	<div id="top-space"></div>
+</template>
+
+<template name="instagram">
+	<div class="photos-container">
+		{{#each photoset}}
+		<img class="photo" src="{{ images.low_resolution.url }}" alt="">
+		{{/each}}
+		<div id="button-more">more</div>
+	</div>
+	<div id="zoomed-image">
+	</div>
+</template>

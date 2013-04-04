@@ -1,0 +1,256 @@
+/* CSS declarations go here */
+body{
+  background-image: url('../bg.jpg');
+  background-attachment:fixed;
+  background-position:right;
+}
+.card {
+  float: left;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 100px;
+  height: 110px;
+  margin-right: 20px;
+  background:white;
+  padding-top:30px;
+}
+
+.cards {
+  overflow: auto;
+}
+
+#container{
+background-color: #466d19;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 560, from(#65981e), to(#184d08));
+  background-image: -webkit-radial-gradient(center center, ellipse farthest-corner, #65981e, #184d08);
+  background-image: -moz-radial-gradient(center center, ellipse farthest-corner, #65981e, #184d08);
+  background-image: -ms-radial-gradient(center center, ellipse farthest-corner, #65981e, #184d08);
+  background-image: -o-radial-gradient(center center, ellipse farthest-corner, #65981e, #184d08);
+  background-image: -khtml-radial-gradient(center center, ellipse farthest-corner, #65981e, #184d08);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  font: 400 16px/1.4 "futura-pt", Helvetica, Arial, sans-serif;
+  width:500px;
+  margin: 0 auto;
+  padding:20px;
+}
+
+.main{
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+}
+
+p{
+    font-size:20px;
+}
+
+#bet {
+    margin: 2px 0 0 10px;
+    height: 25px;
+    width: 60px;
+}
+
+.card {
+  font-size: 1.5em;
+  z-index: 1;
+  position: relative;
+  width: 300px;
+  height: 460px;
+  border-radius: 20px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+  .card div {
+    position: absolute; }
+    .card div:first-child {
+      top: 2%;
+      left: 5%; }
+    .card div:last-child {
+      bottom: 2%;
+      right: 5%;
+      -webkit-transform: rotate(180deg);
+      -khtml-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .card div span {
+      text-align: center;
+      display: block; }
+    .card div .icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 1px; }
+      .card div .icons > div {
+        position: relative; }
+  .card .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+    .card .icons span {
+      position: absolute;
+      font-size: 4em;
+      left: -26px; }
+
+.card.hearts, .card.diamonds {
+  color: #f14000; }
+
+.card.spades, .card.clubs {
+  color: #3c2f29; }
+
+.card.valueA > .icons span {
+  top: -70px; }
+
+.card.value2 > .icons span:nth-child(1),
+.card.value3 > .icons span:nth-child(1) {
+  top: -170px; }
+.card.value2 > .icons span:nth-child(2),
+.card.value3 > .icons span:nth-child(2) {
+  bottom: -170px; }
+.card.value2 > .icons span:nth-child(3),
+.card.value3 > .icons span:nth-child(3) {
+  top: -65px; }
+
+.card.value4 > .icons span:nth-child(1),
+.card.value5 > .icons span:nth-child(1) {
+  top: -170px;
+  left: -90px; }
+.card.value4 > .icons span:nth-child(2),
+.card.value5 > .icons span:nth-child(2) {
+  top: -170px;
+  right: -90px;
+  left: auto; }
+.card.value4 > .icons span:nth-child(3),
+.card.value5 > .icons span:nth-child(3) {
+  bottom: -170px;
+  left: -90px; }
+.card.value4 > .icons span:nth-child(4),
+.card.value5 > .icons span:nth-child(4) {
+  bottom: -170px;
+  right: -90px;
+  left: auto; }
+.card.value4 > .icons span:nth-child(5),
+.card.value5 > .icons span:nth-child(5) {
+  top: -65px; }
+
+.card.value6 > .icons span:nth-child(1),
+.card.value7 > .icons span:nth-child(1),
+.card.value8 > .icons span:nth-child(1) {
+  top: -170px;
+  left: -90px; }
+.card.value6 > .icons span:nth-child(2),
+.card.value7 > .icons span:nth-child(2),
+.card.value8 > .icons span:nth-child(2) {
+  top: -170px;
+  right: -90px;
+  left: auto; }
+.card.value6 > .icons span:nth-child(3),
+.card.value7 > .icons span:nth-child(3),
+.card.value8 > .icons span:nth-child(3) {
+  bottom: -170px;
+  left: -90px; }
+.card.value6 > .icons span:nth-child(4),
+.card.value7 > .icons span:nth-child(4),
+.card.value8 > .icons span:nth-child(4) {
+  bottom: -170px;
+  right: -90px;
+  left: auto; }
+.card.value6 > .icons span:nth-child(5),
+.card.value7 > .icons span:nth-child(5),
+.card.value8 > .icons span:nth-child(5) {
+  top: -65px;
+  left: -90px; }
+.card.value6 > .icons span:nth-child(6),
+.card.value7 > .icons span:nth-child(6),
+.card.value8 > .icons span:nth-child(6) {
+  top: -65px;
+  right: -90px;
+  left: auto; }
+.card.value6 > .icons span:nth-child(7),
+.card.value7 > .icons span:nth-child(7),
+.card.value8 > .icons span:nth-child(7) {
+  top: -120px; }
+.card.value6 > .icons span:nth-child(8),
+.card.value7 > .icons span:nth-child(8),
+.card.value8 > .icons span:nth-child(8) {
+  bottom: -120px; }
+
+.card.value9 > .icons span:nth-child(1) {
+  top: -190px;
+  left: -90px; }
+.card.value9 > .icons span:nth-child(2) {
+  top: -110px;
+  left: -90px; }
+.card.value9 > .icons span:nth-child(3) {
+  bottom: -110px;
+  left: -90px; }
+.card.value9 > .icons span:nth-child(4) {
+  bottom: -190px;
+  left: -90px; }
+.card.value9 > .icons span:nth-child(5) {
+  top: -190px;
+  right: -90px;
+  left: auto; }
+.card.value9 > .icons span:nth-child(6) {
+  top: -110px;
+  right: -90px;
+  left: auto; }
+.card.value9 > .icons span:nth-child(7) {
+  bottom: -110px;
+  right: -90px;
+  left: auto; }
+.card.value9 > .icons span:nth-child(8) {
+  bottom: -190px;
+  right: -90px;
+  left: auto; }
+.card.value9 > .icons span:nth-child(9) {
+  top: -65px; }
+
+.card.value10 > .icons span:nth-child(1) {
+  top: -190px;
+  left: -90px; }
+.card.value10 > .icons span:nth-child(2) {
+  top: -110px;
+  left: -90px; }
+.card.value10 > .icons span:nth-child(3) {
+  bottom: -110px;
+  left: -90px; }
+.card.value10 > .icons span:nth-child(4) {
+  bottom: -190px;
+  left: -90px; }
+.card.value10 > .icons span:nth-child(5) {
+  top: -190px;
+  right: -90px;
+  left: auto; }
+.card.value10 > .icons span:nth-child(6) {
+  top: -110px;
+  right: -90px;
+  left: auto; }
+.card.value10 > .icons span:nth-child(7) {
+  bottom: -110px;
+  right: -90px;
+  left: auto; }
+.card.value10 > .icons span:nth-child(8) {
+  bottom: -190px;
+  right: -90px;
+  left: auto; }
+.card.value10 > .icons span:nth-child(9) {
+  top: -155px; }
+.card.value10 > .icons span:nth-child(10) {
+  bottom: -155px; }
+
+.card.valueJ > .icons > span,
+.card.valueQ > .icons > span,
+.card.valueK > .icons > span {
+  font-size: 6em;
+  top: -100px;
+  left: -70px; }
